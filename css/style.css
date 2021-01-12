@@ -107,17 +107,26 @@ header button{
     margin-right: 10px;
 }
 
-/*FOOTER*/
+/*FOOTER
+A
+A
+A
+TRABAJAR CON FLEX-BASIS*/
 
 footer{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
 footer li{
     display: inline;
+}
+
+footer ul{
+    padding: 0;
 }
 
 footer a{
@@ -125,12 +134,16 @@ footer a{
 }
 
 #header-link{
-    float: left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
 }
 
-footer p{
-    
+#about-us{
+    margin-left: 30px;
 }
+
 
 @media screen and (min-width:800px){
     footer li::after{
@@ -376,4 +389,35 @@ dt{
 .text-img{
     float: left;
     border-radius: 100%;
+}
+
+.hilo-ariadna{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.hilo-ariadna li{
+    display: inline;
+    
+}
+
+.hilo-ariadna a{
+    text-decoration: none;
+    color:#1c1c1c;
+}
+
+.hilo-ariadna li::before{
+    content: '/';
+    margin: 0 10px;
+}
+
+.hilo-ariadna li:first-child::before{
+    content: none;
+}
+
+@media screen and (max-width:800px){
+    .hilo-ariadna{
+        text-align: center;
+    }
 }
