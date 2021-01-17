@@ -9,28 +9,12 @@ body{
     margin: 0;
 }
 
-header, footer{
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-}
 
-header{
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 700;
-    font-style: italic;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer{
-    background-color: #433A44;
-    color: #FFFFFF; 
-}
-
+/*
 img {
     filter:#9b1700;
 }
+*/
 
 section{
     margin-top:80px;
@@ -45,18 +29,13 @@ main{
     main{
         margin: auto 5%;
     }
-
-    footer ul li{
-        display: block;
-        list-style-type: none;
-    }
-
-    footer #about-us{
-        margin-left: 0px;
-    }
 }
 
-/* TIPOGRAFÍA - Falta cambiar opacity de imágenes de sesiones-2020 a 0.5*/
+/* TIPOGRAFÍA */
+header, footer{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
 
 nav a{
     color:#1c1c1c;
@@ -87,6 +66,9 @@ button:hover{
 }
 
 /*HEADER*/
+
+
+
 @media screen and (max-width:800px){
     header{
         flex-direction: column;
@@ -110,6 +92,15 @@ button:hover{
         list-style: none;
         text-align: center;
     }
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-style: italic;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
@@ -149,7 +140,10 @@ header button{
 
 /*FOOTER
 */
+
 footer{
+    background-color: #433A44;
+    color: #FFFFFF; 
     margin-top: 5%; 
     position: relative;
     padding-top: 2%;
@@ -207,8 +201,13 @@ footer p{
         flex-direction: column;
     }
 
-    #social-media, footer p{
+    #social-media, #about-us, footer p{
         margin: 0;
+    }
+
+    footer ul li{
+        display: block;
+        list-style-type: none;
     }
 }
 
@@ -404,9 +403,6 @@ hr{
 }
 
 @media screen and (max-width:800px){
-    .session{
-        grid-template-columns: 30%;
-    }
 
     .sessions h3::before{
         content: '···';
@@ -479,7 +475,7 @@ dt{
 .text-img{
     float: left;
     border-radius: 100%;
-    shape-outside: border-box;
+    shape-outside: circle();
     margin-right: 10px;
 }
 
