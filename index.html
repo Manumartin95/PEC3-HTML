@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header id="header">
         <div class="logo">
             <a href="index.html">
-                <img src="./img/oscarsclub-isologo.png" alt="">
+                <img src="./img/oscarsclub-isologo.png" alt="logo de oscars club">
                 <p>oscars<span>club</span></p>
             </a>
         </div>
@@ -24,8 +24,7 @@
 
         <button id="login-button">Iniciar sesión</button>
     </header>
-    <main>
-        <article>
+    <main id="index">
             <section>
                 <h2>¿Qué es Oscars Club?</h2>
                 <p>Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que les interesan sin necesidad de tener que ir a un espacio físico.</p>
@@ -36,25 +35,25 @@
                 <ul>
                     <li>
                         <figure>
-                            <img src="./img/howto-register.png" alt="">
+                            <img src="./img/howto-register.png" alt="imagen de registro">
                             <figcaption>Regístrate</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="./img/howto-club.png" alt="">
+                            <img src="./img/howto-club.png" alt="imagen de inscripción">
                             <figcaption>Inscríbete</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="./img/howto-film.png" alt="">
+                            <img src="./img/howto-film.png" alt="imagen de selección de película">
                             <figcaption>Elige una película</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="./img/howto-speech.png" alt="">
+                            <img src="./img/howto-speech.png" alt="imagen de debate">
                             <figcaption>Disfruta del debate</figcaption>
                         </figure>
                     </li>
@@ -74,24 +73,22 @@
                     </div>
                     
                     <div id="club-form">
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="Nombre">
+                        <form action="#">
+                            <input type="text" name="name" id="name" placeholder="Nombre" required>
                             <br>
-                            <input type="text" name="" id="" placeholder="Correo electrónico">
+                            <input type="text" name="email" id="email" placeholder="Correo electrónico" required>
                             <br>
-                            <input type="text" name="" id="" placeholder="Contraseña">
+                            <input type="password" name="password" id="password" placeholder="Contraseña" required>
                             <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE OSCARS CLUB. Finalidades: recogida de datos para la inscripción como socio del interesado.Legitimación: Consentimiento del interesado. Destinatarios: No están previstas cesiones de datos a terceros, salvo obligación legal. Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a oscarsclub@oscarsclub.org. Información Adicional: Puede ampliar la información en el enlace deAviso Legal y Política de privacidad.</p>
                             <div class="terms">
-                                <input type="checkbox" name="" id="">
-                                <label for="">He leído y acepto la política de privacidad</label>
+                                <input type="checkbox" name="terms" id="terms" required>
+                                <label for="terms">He leído y acepto la política de privacidad</label>
                             </div>
                             <input type="submit" value="REGISTRARSE">
                         </form>
                     </div>
                 </div>
-            </section>
-        </article>
-    
+            </section>    
     </main>
     
     <footer>
@@ -99,26 +96,29 @@
             <div id="about-us">
                 <nav>
                     <ul>
-                        <li><a href="">Sobre nosotros</a></li>
-                        <li><a href="">Aviso legal</a></li>
-                        <li><a href="">Política de privacidad</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
                     </ul>
                 </nav>
             </div>
             
             <div id="social-media">
                 <ul>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Youtube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
                 </ul>
             </div>    
         </div>
         
-        <p>2020 &copy; Manuel Martín Ramos</p>
-        <p>Iconos <a href="https://www.flaticon.com">flaticon.com</a></p>
-        <p>Imágenes <a href="https://unsplash.com">unsplash.com</a></p>    
-        <a id="header-link" href="#header">&xwedge;</a>
+        <p>2020 &copy; Manuel Martín Ramos
+            <br>
+            Iconos <a href="https://www.flaticon.com">flaticon.com</a>
+            <br>
+            Imágenes <a href="https://unsplash.com">unsplash.com</a>
+            <a id="header-link" href="#header">&xwedge;</a>
+        </p>
 
     </footer>
 </body>
