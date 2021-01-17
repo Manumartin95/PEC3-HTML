@@ -16,7 +16,7 @@ header, footer{
 
 header{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     font-weight: 700;
     font-style: italic;
     justify-content: space-between;
@@ -45,6 +45,7 @@ main{
 
 nav a{
     color:#1c1c1c;
+    text-decoration: none;
 }
 
 
@@ -71,6 +72,24 @@ button:hover{
 }
 
 /*HEADER*/
+@media screen and (max-width:800px){
+    header{
+        flex-direction: column;
+    } 
+    
+    .logo{
+        order: 2;
+    }
+
+    header nav{
+        order: 3;
+    }
+
+    header button{
+        margin-top: 10px;
+        order: 1;
+    }
+}
 
 .logo{
     margin-top: 10px;
@@ -111,14 +130,18 @@ header button{
 A
 A
 A
-TRABAJAR CON FLEX-BASIS*/
+TRABAJAR CON FLEX-BASIS
+Y FLEXDIRECTION COLUMN
 
+*/
 footer{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: 5%; 
     position: relative;
+    padding-bottom: 5px;
+}
+
+footer p{
+    margin-bottom: 0px;
 }
 
 footer li{
@@ -137,13 +160,28 @@ footer a{
     position: absolute;
     right: 0;
     bottom: 0;
-
+    font-size: x-large;
+    margin-right: 15px;
+    margin-bottom: 5px;
 }
 
 #about-us{
     margin-left: 30px;
 }
 
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:800px){
+    footer{
+        text-align: center;
+    }
+
+    .footer-flex{
+        flex-direction: column;
+    }
+}
 
 @media screen and (min-width:800px){
     footer li::after{
@@ -176,6 +214,20 @@ article ul{
 }
 
 /*INDEX-CLUB*/
+
+@media screen and (max-width:800px){
+    #club{
+        flex-direction: column;
+    }
+
+    #club-slogan{
+        width: 100% !important;
+    }
+
+    #club-form{
+        width: 100% !important;
+    }
+}
 
 #club{
     display: flex;
@@ -421,3 +473,4 @@ dt{
         text-align: center;
     }
 }
+
