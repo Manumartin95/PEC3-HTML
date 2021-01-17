@@ -223,7 +223,8 @@ footer p{
     }
 }
 
-/*ARTICLE*/
+
+/*MAIN*/
 
 main#index li{
     display:inline;
@@ -240,7 +241,7 @@ main#index ul{
     flex-wrap: wrap;
 }
 
-/*INDEX-CLUB*/
+/*INDEX*/
 
 @media screen and (max-width:800px){
     #club{
@@ -253,6 +254,10 @@ main#index ul{
 
     #club-form{
         width: 100% !important;
+    }
+
+    #how-work ul{
+        flex-direction: column;
     }
 }
 
@@ -275,9 +280,9 @@ main#index ul{
     width: 40%;
 }
 
-input[type="text"]{
+input[type="text"], input[type="password"]{
     width: 100%;
-    height: 1.5rem;
+    height: 1.7rem;
     margin-top: 10px;
 }
 
@@ -474,7 +479,7 @@ dt{
 .text-img{
     float: left;
     border-radius: 100%;
-    shape-outside: circle();
+    shape-outside: border-box;
     margin-right: 10px;
 }
 
@@ -527,4 +532,9 @@ iframe{
     iframe{
         height: 440px;
     }
+}
+
+aside p{
+    text-transform: uppercase;
+    font-style: italic;
 }
